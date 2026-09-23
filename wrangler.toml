@@ -1,0 +1,6 @@
+name = "mukashi-tv"
+compatibility_date = "2026-09-01"
+
+# 静的サイトのみ（Workerスクリプトなし）。public/ 配下をそのまま配信する。
+[assets]
+directory = "./public"

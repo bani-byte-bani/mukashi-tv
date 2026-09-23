@@ -1,0 +1,2687 @@
+{
+ "genres": [
+  [
+   "anime",
+   "アニメ"
+  ],
+  [
+   "tokusatsu",
+   "特撮"
+  ],
+  [
+   "drama",
+   "ドラマ"
+  ],
+  [
+   "variety",
+   "バラエティ"
+  ],
+  [
+   "uta",
+   "歌番組"
+  ],
+  [
+   "kids",
+   "子ども番組"
+  ]
+ ],
+ "note": "キー局の全国ネット番組が中心。periodsは[開始年, 終了年]、終了年nullは放送中。",
+ "programs": [
+  {
+   "title": "サザエさん",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1969,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "ドラえもん",
+   "genre": "anime",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1979,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "Dr.スランプ アラレちゃん",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1981,
+     1986
+    ]
+   ]
+  },
+  {
+   "title": "忍者ハットリくん",
+   "genre": "anime",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1981,
+     1987
+    ]
+   ]
+  },
+  {
+   "title": "キン肉マン",
+   "genre": "anime",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1983,
+     1986
+    ]
+   ]
+  },
+  {
+   "title": "キャプテン翼",
+   "genre": "anime",
+   "ch": "テレ東",
+   "periods": [
+    [
+     1983,
+     1986
+    ]
+   ]
+  },
+  {
+   "title": "パーマン",
+   "genre": "anime",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1983,
+     1985
+    ]
+   ]
+  },
+  {
+   "title": "北斗の拳",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1984,
+     1988
+    ]
+   ]
+  },
+  {
+   "title": "タッチ",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1985,
+     1987
+    ]
+   ]
+  },
+  {
+   "title": "ハイスクール!奇面組",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1985,
+     1987
+    ]
+   ]
+  },
+  {
+   "title": "ゲゲゲの鬼太郎",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1985,
+     1988
+    ],
+    [
+     1996,
+     1998
+    ],
+    [
+     2007,
+     2009
+    ]
+   ]
+  },
+  {
+   "title": "ドラゴンボール",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1986,
+     1989
+    ]
+   ]
+  },
+  {
+   "title": "聖闘士星矢",
+   "genre": "anime",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1986,
+     1989
+    ]
+   ]
+  },
+  {
+   "title": "めぞん一刻",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1986,
+     1988
+    ]
+   ]
+  },
+  {
+   "title": "シティーハンター",
+   "genre": "anime",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1987,
+     1991
+    ]
+   ]
+  },
+  {
+   "title": "ビックリマン",
+   "genre": "anime",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1987,
+     1989
+    ]
+   ]
+  },
+  {
+   "title": "それいけ!アンパンマン",
+   "genre": "anime",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1988,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "魔神英雄伝ワタル",
+   "genre": "anime",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1988,
+     1989
+    ]
+   ]
+  },
+  {
+   "title": "美味しんぼ",
+   "genre": "anime",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1988,
+     1992
+    ]
+   ]
+  },
+  {
+   "title": "ドラゴンボールZ",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1989,
+     1996
+    ]
+   ]
+  },
+  {
+   "title": "らんま1/2",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1989,
+     1992
+    ]
+   ]
+  },
+  {
+   "title": "おぼっちゃまくん",
+   "genre": "anime",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1989,
+     1992
+    ]
+   ]
+  },
+  {
+   "title": "ちびまる子ちゃん",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1990,
+     1992
+    ],
+    [
+     1995,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "まじかる☆タルるートくん",
+   "genre": "anime",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1990,
+     1992
+    ]
+   ]
+  },
+  {
+   "title": "勇者シリーズ（エクスカイザーほか）",
+   "genre": "anime",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1990,
+     1997
+    ]
+   ]
+  },
+  {
+   "title": "ドラゴンクエスト ダイの大冒険",
+   "genre": "anime",
+   "ch": "TBS",
+   "periods": [
+    [
+     1991,
+     1992
+    ]
+   ]
+  },
+  {
+   "title": "クレヨンしんちゃん",
+   "genre": "anime",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1992,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "幽☆遊☆白書",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1992,
+     1995
+    ]
+   ]
+  },
+  {
+   "title": "美少女戦士セーラームーン",
+   "genre": "anime",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1992,
+     1997
+    ]
+   ]
+  },
+  {
+   "title": "SLAM DUNK",
+   "genre": "anime",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1993,
+     1996
+    ]
+   ]
+  },
+  {
+   "title": "忍たま乱太郎",
+   "genre": "anime",
+   "ch": "NHK教育",
+   "periods": [
+    [
+     1993,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "魔法陣グルグル",
+   "genre": "anime",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1994,
+     1995
+    ]
+   ]
+  },
+  {
+   "title": "赤ずきんチャチャ",
+   "genre": "anime",
+   "ch": "テレ東",
+   "periods": [
+    [
+     1994,
+     1995
+    ]
+   ]
+  },
+  {
+   "title": "新世紀エヴァンゲリオン",
+   "genre": "anime",
+   "ch": "テレ東",
+   "periods": [
+    [
+     1995,
+     1996
+    ]
+   ]
+  },
+  {
+   "title": "名探偵コナン",
+   "genre": "anime",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1996,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "こちら葛飾区亀有公園前派出所",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1996,
+     2004
+    ]
+   ]
+  },
+  {
+   "title": "ドラゴンボールGT",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1996,
+     1997
+    ]
+   ]
+  },
+  {
+   "title": "爆走兄弟レッツ&ゴー!!",
+   "genre": "anime",
+   "ch": "テレ東",
+   "periods": [
+    [
+     1996,
+     1998
+    ]
+   ]
+  },
+  {
+   "title": "ポケットモンスター",
+   "genre": "anime",
+   "ch": "テレ東",
+   "periods": [
+    [
+     1997,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "金田一少年の事件簿",
+   "genre": "anime",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1997,
+     2000
+    ]
+   ]
+  },
+  {
+   "title": "カードキャプターさくら",
+   "genre": "anime",
+   "ch": "NHK",
+   "periods": [
+    [
+     1998,
+     2000
+    ]
+   ]
+  },
+  {
+   "title": "おじゃる丸",
+   "genre": "anime",
+   "ch": "NHK教育",
+   "periods": [
+    [
+     1998,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "ONE PIECE",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1999,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "デジモンアドベンチャー",
+   "genre": "anime",
+   "ch": "フジ",
+   "periods": [
+    [
+     1999,
+     2000
+    ]
+   ]
+  },
+  {
+   "title": "遊☆戯☆王デュエルモンスターズ",
+   "genre": "anime",
+   "ch": "テレ東",
+   "periods": [
+    [
+     2000,
+     2004
+    ]
+   ]
+  },
+  {
+   "title": "とっとこハム太郎",
+   "genre": "anime",
+   "ch": "テレ東",
+   "periods": [
+    [
+     2000,
+     2006
+    ]
+   ]
+  },
+  {
+   "title": "犬夜叉",
+   "genre": "anime",
+   "ch": "日テレ",
+   "periods": [
+    [
+     2000,
+     2004
+    ]
+   ]
+  },
+  {
+   "title": "NARUTO -ナルト-",
+   "genre": "anime",
+   "ch": "テレ東",
+   "periods": [
+    [
+     2002,
+     2007
+    ]
+   ]
+  },
+  {
+   "title": "鋼の錬金術師",
+   "genre": "anime",
+   "ch": "TBS",
+   "periods": [
+    [
+     2003,
+     2004
+    ],
+    [
+     2009,
+     2010
+    ]
+   ]
+  },
+  {
+   "title": "ケロロ軍曹",
+   "genre": "anime",
+   "ch": "テレ東",
+   "periods": [
+    [
+     2004,
+     2011
+    ]
+   ]
+  },
+  {
+   "title": "BLEACH",
+   "genre": "anime",
+   "ch": "テレ東",
+   "periods": [
+    [
+     2004,
+     2012
+    ]
+   ]
+  },
+  {
+   "title": "銀魂",
+   "genre": "anime",
+   "ch": "テレ東",
+   "periods": [
+    [
+     2006,
+     2010
+    ]
+   ]
+  },
+  {
+   "title": "家庭教師ヒットマンREBORN!",
+   "genre": "anime",
+   "ch": "TBS",
+   "periods": [
+    [
+     2006,
+     2010
+    ]
+   ]
+  },
+  {
+   "title": "NARUTO -ナルト- 疾風伝",
+   "genre": "anime",
+   "ch": "テレ東",
+   "periods": [
+    [
+     2007,
+     2017
+    ]
+   ]
+  },
+  {
+   "title": "けいおん!",
+   "genre": "anime",
+   "ch": "TBS",
+   "periods": [
+    [
+     2009,
+     2010
+    ]
+   ]
+  },
+  {
+   "title": "科学戦隊ダイナマン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1983,
+     1983
+    ]
+   ]
+  },
+  {
+   "title": "超電子バイオマン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1984,
+     1984
+    ]
+   ]
+  },
+  {
+   "title": "電撃戦隊チェンジマン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1985,
+     1985
+    ]
+   ]
+  },
+  {
+   "title": "超新星フラッシュマン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1986,
+     1986
+    ]
+   ]
+  },
+  {
+   "title": "光戦隊マスクマン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1987,
+     1987
+    ]
+   ]
+  },
+  {
+   "title": "超獣戦隊ライブマン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1988,
+     1988
+    ]
+   ]
+  },
+  {
+   "title": "高速戦隊ターボレンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1989,
+     1989
+    ]
+   ]
+  },
+  {
+   "title": "地球戦隊ファイブマン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1990,
+     1990
+    ]
+   ]
+  },
+  {
+   "title": "鳥人戦隊ジェットマン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1991,
+     1991
+    ]
+   ]
+  },
+  {
+   "title": "恐竜戦隊ジュウレンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1992,
+     1992
+    ]
+   ]
+  },
+  {
+   "title": "五星戦隊ダイレンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1993,
+     1993
+    ]
+   ]
+  },
+  {
+   "title": "忍者戦隊カクレンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1994,
+     1994
+    ]
+   ]
+  },
+  {
+   "title": "超力戦隊オーレンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1995,
+     1995
+    ]
+   ]
+  },
+  {
+   "title": "激走戦隊カーレンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1996,
+     1996
+    ]
+   ]
+  },
+  {
+   "title": "電磁戦隊メガレンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1997,
+     1997
+    ]
+   ]
+  },
+  {
+   "title": "星獣戦隊ギンガマン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1998,
+     1998
+    ]
+   ]
+  },
+  {
+   "title": "救急戦隊ゴーゴーファイブ",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1999,
+     1999
+    ]
+   ]
+  },
+  {
+   "title": "未来戦隊タイムレンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2000,
+     2000
+    ]
+   ]
+  },
+  {
+   "title": "百獣戦隊ガオレンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2001,
+     2001
+    ]
+   ]
+  },
+  {
+   "title": "忍風戦隊ハリケンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2002,
+     2002
+    ]
+   ]
+  },
+  {
+   "title": "爆竜戦隊アバレンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2003,
+     2003
+    ]
+   ]
+  },
+  {
+   "title": "特捜戦隊デカレンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2004,
+     2004
+    ]
+   ]
+  },
+  {
+   "title": "魔法戦隊マジレンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2005,
+     2005
+    ]
+   ]
+  },
+  {
+   "title": "轟轟戦隊ボウケンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2006,
+     2006
+    ]
+   ]
+  },
+  {
+   "title": "獣拳戦隊ゲキレンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2007,
+     2007
+    ]
+   ]
+  },
+  {
+   "title": "炎神戦隊ゴーオンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2008,
+     2008
+    ]
+   ]
+  },
+  {
+   "title": "侍戦隊シンケンジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2009,
+     2009
+    ]
+   ]
+  },
+  {
+   "title": "天装戦隊ゴセイジャー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2010,
+     2010
+    ]
+   ]
+  },
+  {
+   "title": "宇宙刑事シャイダー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1984,
+     1985
+    ]
+   ]
+  },
+  {
+   "title": "巨獣特捜ジャスピオン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1985,
+     1986
+    ]
+   ]
+  },
+  {
+   "title": "時空戦士スピルバン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1986,
+     1987
+    ]
+   ]
+  },
+  {
+   "title": "超人機メタルダー",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1987,
+     1988
+    ]
+   ]
+  },
+  {
+   "title": "世界忍者戦ジライヤ",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1988,
+     1989
+    ]
+   ]
+  },
+  {
+   "title": "機動刑事ジバン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1989,
+     1990
+    ]
+   ]
+  },
+  {
+   "title": "特警ウインスペクター",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1990,
+     1991
+    ]
+   ]
+  },
+  {
+   "title": "特救指令ソルブレイン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1991,
+     1992
+    ]
+   ]
+  },
+  {
+   "title": "特捜エクシードラフト",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1992,
+     1993
+    ]
+   ]
+  },
+  {
+   "title": "特捜ロボ ジャンパーソン",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1993,
+     1994
+    ]
+   ]
+  },
+  {
+   "title": "ブルースワット",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1994,
+     1995
+    ]
+   ]
+  },
+  {
+   "title": "重甲ビーファイター",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1995,
+     1996
+    ]
+   ]
+  },
+  {
+   "title": "ビーファイターカブト",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1996,
+     1997
+    ]
+   ]
+  },
+  {
+   "title": "ビーロボ カブタック",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1997,
+     1998
+    ]
+   ]
+  },
+  {
+   "title": "テツワン探偵ロボタック",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1998,
+     1999
+    ]
+   ]
+  },
+  {
+   "title": "美少女仮面ポワトリン",
+   "genre": "tokusatsu",
+   "ch": "フジ",
+   "periods": [
+    [
+     1990,
+     1990
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダーBLACK",
+   "genre": "tokusatsu",
+   "ch": "TBS",
+   "periods": [
+    [
+     1987,
+     1988
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダーBLACK RX",
+   "genre": "tokusatsu",
+   "ch": "TBS",
+   "periods": [
+    [
+     1988,
+     1989
+    ]
+   ]
+  },
+  {
+   "title": "ウルトラマンティガ",
+   "genre": "tokusatsu",
+   "ch": "TBS",
+   "periods": [
+    [
+     1996,
+     1997
+    ]
+   ]
+  },
+  {
+   "title": "ウルトラマンダイナ",
+   "genre": "tokusatsu",
+   "ch": "TBS",
+   "periods": [
+    [
+     1997,
+     1998
+    ]
+   ]
+  },
+  {
+   "title": "ウルトラマンガイア",
+   "genre": "tokusatsu",
+   "ch": "TBS",
+   "periods": [
+    [
+     1998,
+     1999
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダークウガ",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2000,
+     2001
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダーアギト",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2001,
+     2002
+    ]
+   ]
+  },
+  {
+   "title": "ウルトラマンコスモス",
+   "genre": "tokusatsu",
+   "ch": "TBS",
+   "periods": [
+    [
+     2001,
+     2002
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダー龍騎",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2002,
+     2003
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダー555",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2003,
+     2004
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダー剣",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2004,
+     2005
+    ]
+   ]
+  },
+  {
+   "title": "ウルトラマンネクサス",
+   "genre": "tokusatsu",
+   "ch": "TBS",
+   "periods": [
+    [
+     2004,
+     2005
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダー響鬼",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2005,
+     2006
+    ]
+   ]
+  },
+  {
+   "title": "ウルトラマンマックス",
+   "genre": "tokusatsu",
+   "ch": "TBS",
+   "periods": [
+    [
+     2005,
+     2006
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダーカブト",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2006,
+     2007
+    ]
+   ]
+  },
+  {
+   "title": "ウルトラマンメビウス",
+   "genre": "tokusatsu",
+   "ch": "TBS",
+   "periods": [
+    [
+     2006,
+     2007
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダー電王",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2007,
+     2008
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダーキバ",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2008,
+     2009
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダーディケイド",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2009,
+     2009
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダーW",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2009,
+     2010
+    ]
+   ]
+  },
+  {
+   "title": "仮面ライダーOOO",
+   "genre": "tokusatsu",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2010,
+     2011
+    ]
+   ]
+  },
+  {
+   "title": "水戸黄門",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     1969,
+     2011
+    ]
+   ]
+  },
+  {
+   "title": "3年B組金八先生",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     1979,
+     1981
+    ],
+    [
+     1988,
+     1988
+    ],
+    [
+     1995,
+     1996
+    ],
+    [
+     1999,
+     2002
+    ],
+    [
+     2004,
+     2005
+    ],
+    [
+     2007,
+     2008
+    ]
+   ]
+  },
+  {
+   "title": "北の国から",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1981,
+     2002
+    ]
+   ]
+  },
+  {
+   "title": "おしん",
+   "genre": "drama",
+   "ch": "NHK",
+   "periods": [
+    [
+     1983,
+     1984
+    ]
+   ]
+  },
+  {
+   "title": "スクール☆ウォーズ",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     1984,
+     1985
+    ]
+   ]
+  },
+  {
+   "title": "スケバン刑事",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1985,
+     1987
+    ]
+   ]
+  },
+  {
+   "title": "男女7人夏物語／秋物語",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     1986,
+     1987
+    ]
+   ]
+  },
+  {
+   "title": "あぶない刑事",
+   "genre": "drama",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1986,
+     1987
+    ]
+   ]
+  },
+  {
+   "title": "教師びんびん物語",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1988,
+     1988
+    ]
+   ]
+  },
+  {
+   "title": "君の瞳をタイホする!",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1988,
+     1988
+    ]
+   ]
+  },
+  {
+   "title": "抱きしめたい!",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1988,
+     1988
+    ]
+   ]
+  },
+  {
+   "title": "はぐれ刑事純情派",
+   "genre": "drama",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1988,
+     2005
+    ]
+   ]
+  },
+  {
+   "title": "渡る世間は鬼ばかり",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     1990,
+     2011
+    ]
+   ]
+  },
+  {
+   "title": "世にも奇妙な物語",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1990,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "東京ラブストーリー",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1991,
+     1991
+    ]
+   ]
+  },
+  {
+   "title": "101回目のプロポーズ",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1991,
+     1991
+    ]
+   ]
+  },
+  {
+   "title": "愛という名のもとに",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1992,
+     1992
+    ]
+   ]
+  },
+  {
+   "title": "ずっとあなたが好きだった",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     1992,
+     1992
+    ]
+   ]
+  },
+  {
+   "title": "ひとつ屋根の下",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1993,
+     1993
+    ],
+    [
+     1997,
+     1997
+    ]
+   ]
+  },
+  {
+   "title": "高校教師",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     1993,
+     1993
+    ]
+   ]
+  },
+  {
+   "title": "あすなろ白書",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1993,
+     1993
+    ]
+   ]
+  },
+  {
+   "title": "家なき子",
+   "genre": "drama",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1994,
+     1995
+    ]
+   ]
+  },
+  {
+   "title": "29歳のクリスマス",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1994,
+     1994
+    ]
+   ]
+  },
+  {
+   "title": "古畑任三郎",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1994,
+     1994
+    ],
+    [
+     1996,
+     1996
+    ],
+    [
+     1999,
+     1999
+    ]
+   ]
+  },
+  {
+   "title": "未成年",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     1995,
+     1995
+    ]
+   ]
+  },
+  {
+   "title": "星の金貨",
+   "genre": "drama",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1995,
+     1995
+    ]
+   ]
+  },
+  {
+   "title": "ロングバケーション",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1996,
+     1996
+    ]
+   ]
+  },
+  {
+   "title": "踊る大捜査線",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1997,
+     1997
+    ]
+   ]
+  },
+  {
+   "title": "ビーチボーイズ",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1997,
+     1997
+    ]
+   ]
+  },
+  {
+   "title": "GTO",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1998,
+     1998
+    ]
+   ]
+  },
+  {
+   "title": "ショムニ",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1998,
+     1998
+    ]
+   ]
+  },
+  {
+   "title": "ケイゾク",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     1999,
+     1999
+    ]
+   ]
+  },
+  {
+   "title": "救命病棟24時",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     1999,
+     1999
+    ]
+   ]
+  },
+  {
+   "title": "ビューティフルライフ",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     2000,
+     2000
+    ]
+   ]
+  },
+  {
+   "title": "池袋ウエストゲートパーク",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     2000,
+     2000
+    ]
+   ]
+  },
+  {
+   "title": "やまとなでしこ",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     2000,
+     2000
+    ]
+   ]
+  },
+  {
+   "title": "HERO",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     2001,
+     2001
+    ]
+   ]
+  },
+  {
+   "title": "ごくせん",
+   "genre": "drama",
+   "ch": "日テレ",
+   "periods": [
+    [
+     2002,
+     2002
+    ],
+    [
+     2005,
+     2005
+    ],
+    [
+     2008,
+     2008
+    ]
+   ]
+  },
+  {
+   "title": "木更津キャッツアイ",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     2002,
+     2002
+    ]
+   ]
+  },
+  {
+   "title": "相棒",
+   "genre": "drama",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2002,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "白い巨塔",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     2003,
+     2004
+    ]
+   ]
+  },
+  {
+   "title": "プライド",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     2004,
+     2004
+    ]
+   ]
+  },
+  {
+   "title": "電車男",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     2005,
+     2005
+    ]
+   ]
+  },
+  {
+   "title": "ドラゴン桜",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     2005,
+     2005
+    ]
+   ]
+  },
+  {
+   "title": "女王の教室",
+   "genre": "drama",
+   "ch": "日テレ",
+   "periods": [
+    [
+     2005,
+     2005
+    ]
+   ]
+  },
+  {
+   "title": "野ブタ。をプロデュース",
+   "genre": "drama",
+   "ch": "日テレ",
+   "periods": [
+    [
+     2005,
+     2005
+    ]
+   ]
+  },
+  {
+   "title": "1リットルの涙",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     2005,
+     2005
+    ]
+   ]
+  },
+  {
+   "title": "花より男子",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     2005,
+     2005
+    ],
+    [
+     2007,
+     2007
+    ]
+   ]
+  },
+  {
+   "title": "のだめカンタービレ",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     2006,
+     2006
+    ]
+   ]
+  },
+  {
+   "title": "ガリレオ",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     2007,
+     2007
+    ]
+   ]
+  },
+  {
+   "title": "花ざかりの君たちへ",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     2007,
+     2007
+    ]
+   ]
+  },
+  {
+   "title": "ROOKIES",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     2008,
+     2008
+    ]
+   ]
+  },
+  {
+   "title": "コード・ブルー",
+   "genre": "drama",
+   "ch": "フジ",
+   "periods": [
+    [
+     2008,
+     2008
+    ]
+   ]
+  },
+  {
+   "title": "JIN-仁-",
+   "genre": "drama",
+   "ch": "TBS",
+   "periods": [
+    [
+     2009,
+     2009
+    ]
+   ]
+  },
+  {
+   "title": "龍馬伝",
+   "genre": "drama",
+   "ch": "NHK",
+   "periods": [
+    [
+     2010,
+     2010
+    ]
+   ]
+  },
+  {
+   "title": "8時だョ!全員集合",
+   "genre": "variety",
+   "ch": "TBS",
+   "periods": [
+    [
+     1969,
+     1985
+    ]
+   ]
+  },
+  {
+   "title": "オレたちひょうきん族",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1981,
+     1989
+    ]
+   ]
+  },
+  {
+   "title": "なるほど!ザ・ワールド",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1981,
+     1996
+    ]
+   ]
+  },
+  {
+   "title": "森田一義アワー 笑っていいとも!",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1982,
+     2014
+    ]
+   ]
+  },
+  {
+   "title": "天才・たけしの元気が出るテレビ!!",
+   "genre": "variety",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1985,
+     1996
+    ]
+   ]
+  },
+  {
+   "title": "加トちゃんケンちゃんごきげんテレビ",
+   "genre": "variety",
+   "ch": "TBS",
+   "periods": [
+    [
+     1986,
+     1992
+    ]
+   ]
+  },
+  {
+   "title": "風雲!たけし城",
+   "genre": "variety",
+   "ch": "TBS",
+   "periods": [
+    [
+     1986,
+     1989
+    ]
+   ]
+  },
+  {
+   "title": "志村けんのだいじょうぶだぁ",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1987,
+     1993
+    ]
+   ]
+  },
+  {
+   "title": "ねるとん紅鯨団",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1987,
+     1994
+    ]
+   ]
+  },
+  {
+   "title": "とんねるずのみなさんのおかげです",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1988,
+     1997
+    ]
+   ]
+  },
+  {
+   "title": "夢で逢えたら",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1988,
+     1991
+    ]
+   ]
+  },
+  {
+   "title": "クイズ世界はSHOW by ショーバイ!!",
+   "genre": "variety",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1988,
+     1996
+    ]
+   ]
+  },
+  {
+   "title": "ダウンタウンのガキの使いやあらへんで!!",
+   "genre": "variety",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1989,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "邦ちゃんのやまだかつてないテレビ",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1989,
+     1992
+    ]
+   ]
+  },
+  {
+   "title": "世界まる見え!テレビ特捜部",
+   "genre": "variety",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1990,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "ダウンタウンのごっつええ感じ",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1991,
+     1997
+    ]
+   ]
+  },
+  {
+   "title": "平成教育委員会",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1991,
+     1997
+    ]
+   ]
+  },
+  {
+   "title": "進め!電波少年",
+   "genre": "variety",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1992,
+     2002
+    ]
+   ]
+  },
+  {
+   "title": "ボキャブラ天国",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1992,
+     1999
+    ]
+   ]
+  },
+  {
+   "title": "料理の鉄人",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1993,
+     1999
+    ]
+   ]
+  },
+  {
+   "title": "関口宏の東京フレンドパークII",
+   "genre": "variety",
+   "ch": "TBS",
+   "periods": [
+    [
+     1994,
+     2011
+    ]
+   ]
+  },
+  {
+   "title": "ザ!鉄腕!DASH!!",
+   "genre": "variety",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1995,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "ASAYAN",
+   "genre": "variety",
+   "ch": "テレ東",
+   "periods": [
+    [
+     1995,
+     2002
+    ]
+   ]
+  },
+  {
+   "title": "ウッチャンナンチャンのウリナリ!!",
+   "genre": "variety",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1996,
+     2002
+    ]
+   ]
+  },
+  {
+   "title": "めちゃ×2イケてるッ!",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1996,
+     2018
+    ]
+   ]
+  },
+  {
+   "title": "SMAP×SMAP",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1996,
+     2016
+    ]
+   ]
+  },
+  {
+   "title": "学校へ行こう!",
+   "genre": "variety",
+   "ch": "TBS",
+   "periods": [
+    [
+     1997,
+     2008
+    ]
+   ]
+  },
+  {
+   "title": "伊東家の食卓",
+   "genre": "variety",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1997,
+     2006
+    ]
+   ]
+  },
+  {
+   "title": "とんねるずのみなさんのおかげでした",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     1997,
+     2018
+    ]
+   ]
+  },
+  {
+   "title": "ロンドンハーツ",
+   "genre": "variety",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1999,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "爆笑オンエアバトル",
+   "genre": "variety",
+   "ch": "NHK",
+   "periods": [
+    [
+     1999,
+     2010
+    ]
+   ]
+  },
+  {
+   "title": "はねるのトびら",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     2001,
+     2012
+    ]
+   ]
+  },
+  {
+   "title": "¥マネーの虎",
+   "genre": "variety",
+   "ch": "日テレ",
+   "periods": [
+    [
+     2001,
+     2004
+    ]
+   ]
+  },
+  {
+   "title": "トリビアの泉",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     2002,
+     2006
+    ]
+   ]
+  },
+  {
+   "title": "行列のできる法律相談所",
+   "genre": "variety",
+   "ch": "日テレ",
+   "periods": [
+    [
+     2002,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "エンタの神様",
+   "genre": "variety",
+   "ch": "日テレ",
+   "periods": [
+    [
+     2003,
+     2010
+    ]
+   ]
+  },
+  {
+   "title": "アメトーーク!",
+   "genre": "variety",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     2003,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "クイズ!ヘキサゴンII",
+   "genre": "variety",
+   "ch": "フジ",
+   "periods": [
+    [
+     2005,
+     2011
+    ]
+   ]
+  },
+  {
+   "title": "NHK紅白歌合戦",
+   "genre": "uta",
+   "ch": "NHK",
+   "periods": [
+    [
+     1951,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "夜のヒットスタジオ",
+   "genre": "uta",
+   "ch": "フジ",
+   "periods": [
+    [
+     1968,
+     1990
+    ]
+   ]
+  },
+  {
+   "title": "ザ・ベストテン",
+   "genre": "uta",
+   "ch": "TBS",
+   "periods": [
+    [
+     1978,
+     1989
+    ]
+   ]
+  },
+  {
+   "title": "ザ・トップテン",
+   "genre": "uta",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1981,
+     1986
+    ]
+   ]
+  },
+  {
+   "title": "歌のトップテン",
+   "genre": "uta",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1986,
+     1990
+    ]
+   ]
+  },
+  {
+   "title": "ミュージックステーション",
+   "genre": "uta",
+   "ch": "テレ朝",
+   "periods": [
+    [
+     1986,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "三宅裕司のいかすバンド天国",
+   "genre": "uta",
+   "ch": "TBS",
+   "periods": [
+    [
+     1989,
+     1990
+    ]
+   ]
+  },
+  {
+   "title": "COUNT DOWN TV",
+   "genre": "uta",
+   "ch": "TBS",
+   "periods": [
+    [
+     1993,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "ポップジャム",
+   "genre": "uta",
+   "ch": "NHK",
+   "periods": [
+    [
+     1993,
+     2007
+    ]
+   ]
+  },
+  {
+   "title": "HEY!HEY!HEY! MUSIC CHAMP",
+   "genre": "uta",
+   "ch": "フジ",
+   "periods": [
+    [
+     1994,
+     2012
+    ]
+   ]
+  },
+  {
+   "title": "THE夜もヒッパレ",
+   "genre": "uta",
+   "ch": "日テレ",
+   "periods": [
+    [
+     1995,
+     2002
+    ]
+   ]
+  },
+  {
+   "title": "うたばん",
+   "genre": "uta",
+   "ch": "TBS",
+   "periods": [
+    [
+     1996,
+     2010
+    ]
+   ]
+  },
+  {
+   "title": "LOVE LOVE あいしてる",
+   "genre": "uta",
+   "ch": "フジ",
+   "periods": [
+    [
+     1996,
+     2001
+    ]
+   ]
+  },
+  {
+   "title": "おかあさんといっしょ",
+   "genre": "kids",
+   "ch": "NHK教育",
+   "periods": [
+    [
+     1959,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "できるかな",
+   "genre": "kids",
+   "ch": "NHK教育",
+   "periods": [
+    [
+     1970,
+     1990
+    ]
+   ]
+  },
+  {
+   "title": "ひらけ!ポンキッキ",
+   "genre": "kids",
+   "ch": "フジ",
+   "periods": [
+    [
+     1973,
+     1993
+    ]
+   ]
+  },
+  {
+   "title": "つくってあそぼ",
+   "genre": "kids",
+   "ch": "NHK教育",
+   "periods": [
+    [
+     1990,
+     2013
+    ]
+   ]
+  },
+  {
+   "title": "ウゴウゴルーガ",
+   "genre": "kids",
+   "ch": "フジ",
+   "periods": [
+    [
+     1992,
+     1994
+    ]
+   ]
+  },
+  {
+   "title": "ポンキッキーズ",
+   "genre": "kids",
+   "ch": "フジ",
+   "periods": [
+    [
+     1993,
+     2007
+    ]
+   ]
+  },
+  {
+   "title": "天才てれびくん",
+   "genre": "kids",
+   "ch": "NHK教育",
+   "periods": [
+    [
+     1993,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "おはスタ",
+   "genre": "kids",
+   "ch": "テレ東",
+   "periods": [
+    [
+     1997,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "ピタゴラスイッチ",
+   "genre": "kids",
+   "ch": "NHK教育",
+   "periods": [
+    [
+     2002,
+     null
+    ]
+   ]
+  },
+  {
+   "title": "にほんごであそぼ",
+   "genre": "kids",
+   "ch": "NHK教育",
+   "periods": [
+    [
+     2003,
+     null
+    ]
+   ]
+  }
+ ]
+}
