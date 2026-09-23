@@ -24,28 +24,32 @@ h1{font-size:1.5rem;margin:12px 0 2px;letter-spacing:.05em}
 .row label.t{display:block;font-size:.8rem;color:var(--sub);margin-bottom:4px}
 select{font-size:1rem;padding:8px;border-radius:8px;border:1px solid var(--line);
   background:var(--bg);color:var(--text)}
-.range{display:flex;align-items:center;gap:8px}
 .chk{display:inline-flex;align-items:center;gap:6px;margin-left:10px;font-size:.9rem}
 button{font-size:1rem;padding:10px 18px;border-radius:999px;border:none;
   background:var(--accent);color:#fff;font-weight:bold;cursor:pointer}
 button.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent);font-size:.85rem;padding:6px 14px}
 #summary{margin:20px 0 8px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
 #summary p{margin:0;font-size:.9rem;color:var(--sub)}
-details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
-summary{padding:12px 16px;cursor:pointer;font-weight:bold;list-style:none;display:flex;justify-content:space-between}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"＋";color:var(--sub)}
-details[open] summary::after{content:"－"}
-summary .g{color:var(--accent);font-weight:normal;margin-left:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;
+  border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--card);z-index:1}
+.nav.bottom{border-bottom:none;border-top:1px solid var(--line);position:static}
+.nav .cur{text-align:center;font-weight:bold;font-size:1.1rem;line-height:1.3}
+.nav .cur small{display:block;color:var(--accent);font-weight:normal;font-size:.8rem}
+.nav button{background:var(--chip);color:var(--text);font-size:.85rem;padding:8px 12px;min-width:92px;font-weight:normal}
+.nav button:disabled{opacity:.35;cursor:default}
 .body{padding:0 16px 14px}
 h3{font-size:.85rem;margin:14px 0 6px;color:var(--sub);border-bottom:1px solid var(--line);padding-bottom:3px}
 h4{font-size:.8rem;margin:10px 0 4px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{background:var(--chip);border-radius:6px;padding:3px 8px;font-size:.85rem}
+a.chip,.chip{background:var(--chip);border-radius:6px;padding:3px 8px;font-size:.85rem;color:var(--text);text-decoration:none}
+a.chip:hover{outline:1px solid var(--accent)}
 .chip small{color:var(--sub);margin-left:4px;font-size:.7rem}
 .chip .n{color:var(--new);font-size:.7rem;font-weight:bold;margin-right:3px}
 ul{margin:0;padding-left:1.2em;font-size:.9rem}
-.note{color:var(--sub);font-size:.75rem}
+ul a{color:var(--text);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+ul a:hover{text-decoration-color:var(--accent)}
+.hint{color:var(--sub);font-size:.75rem;margin:6px 0 0}
 .empty{color:var(--sub);font-size:.85rem}
 footer{margin-top:30px;font-size:.75rem;color:var(--sub)}
 </style>
@@ -53,7 +57,7 @@ footer{margin-top:30px;font-size:.75rem;color:var(--sub)}
 <body>
 <main>
   <h1>昔よくみてた番組</h1>
-  <p class="lead">生まれた年とテレビをよく観ていた頃を選ぶと、当時の番組と世の中を振り返れます。</p>
+  <p class="lead">生まれた年と学年を選ぶと、その頃の番組と世の中を振り返れます。</p>
 
   <div class="form">
     <div class="row">
@@ -62,10 +66,8 @@ footer{margin-top:30px;font-size:.75rem;color:var(--sub)}
       <label class="chk"><input type="checkbox" id="early">早生まれ（1〜3月生）</label>
     </div>
     <div class="row">
-      <label class="t">よく観ていた学年</label>
-      <div class="range">
-        <select id="from"></select><span>〜</span><select id="to"></select>
-      </div>
+      <label class="t" for="grade">振り返る学年</label>
+      <select id="grade"></select>
     </div>
     <button id="go">振り返る</button>
   </div>
@@ -91,30 +93,47 @@ const GRADES = [ // [表示名, 小1からの差]
 const $ = id => document.getElementById(id);
 let programsData = null;
 const yearCache = {};
+let runId = 0; // 連打時に古い描画を捨てるための連番
 
 // ===== フォーム初期化 =====
 for (let y = BIRTH_MAX; y >= BIRTH_MIN; y--) $("birth").add(new Option(y + "年", y));
-GRADES.forEach((g, i) => { $("from").add(new Option(g[0], i)); $("to").add(new Option(g[0], i)); });
-$("birth").value = 1986; $("from").value = 3; $("to").value = 8; // 初期値：小1〜小6
+GRADES.forEach((g, i) => $("grade").add(new Option(g[0], i)));
+$("birth").value = 1986; $("grade").value = 3; // 初期値：小1
 
-// URLパラメータから復元
+// URLパラメータから復元（旧形式の f= も学年として受け付ける）
 const q = new URLSearchParams(location.search);
 // 範囲外・不正な値は初期値のままにする
 const setIfValid = (id, v) => { if (v != null && [...$(id).options].some(o => o.value === v)) $(id).value = v; };
 if (q.get("b")) {
   setIfValid("birth", q.get("b"));
   $("early").checked = q.get("e") === "1";
-  setIfValid("from", q.get("f"));
-  setIfValid("to", q.get("t"));
-  run(false);
+  setIfValid("grade", q.get("g") ?? q.get("f"));
+  run();
 }
 
-$("go").onclick = () => run(true);
+$("go").onclick = () => run();
 $("share").onclick = async () => {
   try { await navigator.clipboard.writeText(location.href); $("share").textContent = "コピーしました"; }
   catch { prompt("このURLをコピーしてください", location.href); }
   setTimeout(() => $("share").textContent = "URLをコピー", 1500);
 };
+
+// 前後の学年へ移動
+function step(d) {
+  const g = +$("grade").value + d;
+  if (g < 0 || g >= GRADES.length) return;
+  $("grade").value = g;
+  run();
+}
+$("result").addEventListener("click", e => {
+  const b = e.target.closest("button[data-step]");
+  if (b) step(+b.dataset.step);
+});
+document.addEventListener("keydown", e => {
+  if ($("summary").hidden || e.target.closest("select,input")) return;
+  if (e.key === "ArrowLeft") step(-1);
+  if (e.key === "ArrowRight") step(1);
+});
 
 // ===== データ読み込み =====
 async function loadPrograms() {
@@ -137,17 +156,11 @@ function gradeYear(birth, early, idx) {
 }
 
 // ===== 実行 =====
-async function run(push) {
-  const birth = +$("birth").value, early = $("early").checked;
-  let f = +$("from").value, t = +$("to").value;
-  if (f > t) [f, t] = [t, f];
+async function run() {
+  const id = ++runId;
+  const birth = +$("birth").value, early = $("early").checked, g = +$("grade").value;
+  history.replaceState(null, "", "?" + new URLSearchParams({ b: birth, e: early ? 1 : 0, g }));
 
-  if (push) {
-    const p = new URLSearchParams({ b: birth, e: early ? 1 : 0, f, t });
-    history.replaceState(null, "", "?" + p);
-  }
-
-  $("result").innerHTML = '<p class="empty">読み込み中…</p>';
   let data;
   try { data = await loadPrograms(); }
   catch (e) {
@@ -155,21 +168,20 @@ async function run(push) {
     console.error(e); return;
   }
 
-  const y1 = gradeYear(birth, early, f), y2 = gradeYear(birth, early, t);
-  $("sumText").textContent = `${birth}年${early ? "（早生まれ）" : ""}生まれ・${GRADES[f][0]}〜${GRADES[t][0]}：${y1}〜${y2}年`;
-  $("summary").hidden = false;
+  const y = gradeYear(birth, early, g);
+  const yd = await loadYear(y);
+  if (id !== runId) return; // 連打時は最後の操作だけ描画する
 
-  const html = [];
-  for (let i = f; i <= t; i++) {
-    const y = gradeYear(birth, early, i);
-    const yd = await loadYear(y);
-    html.push(renderYear(y, GRADES[i][0], data, yd, i === f));
-  }
-  $("result").innerHTML = html.join("");
+  $("sumText").textContent = `${birth}年${early ? "（早生まれ）" : ""}生まれ`;
+  $("summary").hidden = false;
+  $("result").innerHTML = renderYear(y, g, data, yd);
 }
 
 // ===== 描画 =====
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const gUrl = w => "https://www.google.com/search?q=" + encodeURIComponent(w);
+const link = (w, inner, cls = "") =>
+  `<a${cls ? ` class="${cls}"` : ""} href="${esc(gUrl(w))}" target="_blank" rel="noopener">${inner}</a>`;
 
 function onAir(p, y) {
   return p.periods.some(([s, e]) => s <= y && y <= (e ?? 9999));
@@ -178,8 +190,18 @@ function isNew(p, y) {
   return p.periods.some(([s]) => s === y);
 }
 
-function renderYear(y, gradeName, data, yd, open) {
-  let h = `<details${open ? " open" : ""}><summary><span>${y}年<span class="g">｜${gradeName}</span></span></summary><div class="body">`;
+function nav(y, g, pos) {
+  const birth = +$("birth").value, early = $("early").checked;
+  const side = d => {
+    const i = g + d, ok = i >= 0 && i < GRADES.length;
+    const label = ok ? (d < 0 ? `◀ ${GRADES[i][0]}` : `${GRADES[i][0]} ▶`) : (d < 0 ? "◀" : "▶");
+    return `<button data-step="${d}"${ok ? "" : " disabled"} aria-label="${d < 0 ? "前の学年" : "次の学年"}">${label}</button>`;
+  };
+  return `<div class="nav ${pos}">${side(-1)}<div class="cur">${y}年<small>${GRADES[g][0]}</small></div>${side(1)}</div>`;
+}
+
+function renderYear(y, g, data, yd) {
+  let h = `<div class="card">${nav(y, g, "top")}<div class="body">`;
 
   // 番組
   h += `<h3>📺 番組</h3>`;
@@ -188,24 +210,28 @@ function renderYear(y, gradeName, data, yd, open) {
     if (!list.length) continue;
     list.sort((a, b) => isNew(b, y) - isNew(a, y));
     h += `<h4>${label}</h4><div class="chips">` +
-      list.map(p => `<span class="chip">${isNew(p, y) ? '<span class="n">新</span>' : ""}${esc(p.title)}<small>${esc(p.ch)}</small></span>`).join("") +
+      list.map(p => link(p.title, `${isNew(p, y) ? '<span class="n">新</span>' : ""}${esc(p.title)}<small>${esc(p.ch)}</small>`, "chip")).join("") +
       `</div>`;
   }
 
   if (!yd) {
-    h += `<p class="empty">この年の流行語・出来事は準備中です。</p></div></details>`;
-    return h;
+    h += `<p class="empty">この年の流行語・出来事は準備中です。</p>`;
+  } else {
+    if (yd.buzzwords?.length) {
+      h += `<h3>💬 流行語</h3><div class="chips">` +
+        yd.buzzwords.map(b => link(b.w, `${esc(b.w)}${b.note ? `<small>${esc(b.note)}</small>` : ""}`, "chip")).join("") + `</div>`;
+    }
+    const lists = [["trends","✨ 社会現象・ブーム"],["events","📰 出来事"],
+                   ["music","🎵 音楽"],["movies","🎬 映画"],["books","📚 書籍"]];
+    for (const [k, label] of lists) {
+      if (yd[k]?.length) h += `<h3>${label}</h3><ul>` + yd[k].map(x => {
+        const t = typeof x === "string" ? x : x.title;
+        return `<li>${link(t, esc(t))}</li>`;
+      }).join("") + `</ul>`;
+    }
   }
-  if (yd.buzzwords?.length) {
-    h += `<h3>💬 流行語</h3><div class="chips">` +
-      yd.buzzwords.map(b => `<span class="chip">${esc(b.w)}${b.note ? `<small>${esc(b.note)}</small>` : ""}</span>`).join("") + `</div>`;
-  }
-  const lists = [["trends","✨ 社会現象・ブーム"],["events","📰 出来事"],
-                 ["music","🎵 音楽"],["movies","🎬 映画"],["books","📚 書籍"]];
-  for (const [k, label] of lists) {
-    if (yd[k]?.length) h += `<h3>${label}</h3><ul>` + yd[k].map(x => `<li>${esc(typeof x === "string" ? x : x.title)}</li>`).join("") + `</ul>`;
-  }
-  return h + `</div></details>`;
+  h += `<p class="hint">タップでGoogle検索が開きます</p>`;
+  return h + `</div>${nav(y, g, "bottom")}</div>`;
 }
 </script>
 </body>
