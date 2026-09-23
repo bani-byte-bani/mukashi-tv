@@ -39,6 +39,8 @@ button.ghost{background:transparent;color:var(--accent);border:1px solid var(--a
 .nav button{background:var(--chip);color:var(--text);font-size:.85rem;padding:8px 12px;min-width:92px;font-weight:normal}
 .nav button:disabled{opacity:.35;cursor:default}
 .body{padding:0 16px 14px}
+.note{color:var(--sub);font-size:.75rem}
+h3 .note{font-weight:normal;margin-left:4px}
 h3{font-size:.85rem;margin:14px 0 6px;color:var(--sub);border-bottom:1px solid var(--line);padding-bottom:3px}
 h4{font-size:.8rem;margin:10px 0 4px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
@@ -47,8 +49,16 @@ a.chip:hover{outline:1px solid var(--accent)}
 .chip small{color:var(--sub);margin-left:4px;font-size:.7rem}
 .chip .n{color:var(--new);font-size:.7rem;font-weight:bold;margin-right:3px}
 ul{margin:0;padding-left:1.2em;font-size:.9rem}
-ul a{color:var(--text);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
-ul a:hover{text-decoration-color:var(--accent)}
+ul a,ol a{color:var(--text);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+ul a:hover,ol a:hover{text-decoration-color:var(--accent)}
+ol{margin:0;padding-left:1.6em;font-size:.9rem}
+ol a small{color:var(--sub);margin-left:6px;font-size:.75rem}
+#result{touch-action:pan-y}
+.card.slide-l{animation:slideL .2s ease-out}
+.card.slide-r{animation:slideR .2s ease-out}
+@keyframes slideL{from{transform:translateX(40px);opacity:.3}to{transform:none;opacity:1}}
+@keyframes slideR{from{transform:translateX(-40px);opacity:.3}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion: reduce){.card.slide-l,.card.slide-r{animation:none}}
 .hint{color:var(--sub);font-size:.75rem;margin:6px 0 0}
 .empty{color:var(--sub);font-size:.85rem}
 footer{margin-top:30px;font-size:.75rem;color:var(--sub)}
@@ -123,12 +133,23 @@ function step(d) {
   const g = +$("grade").value + d;
   if (g < 0 || g >= GRADES.length) return;
   $("grade").value = g;
-  run();
+  run(d);
 }
 $("result").addEventListener("click", e => {
   const b = e.target.closest("button[data-step]");
   if (b) step(+b.dataset.step);
 });
+// スワイプ（横方向に60px以上、かつ縦より横の動きが大きいとき）
+let touch = null;
+$("result").addEventListener("touchstart", e => {
+  touch = e.touches.length === 1 ? { x: e.touches[0].clientX, y: e.touches[0].clientY } : null;
+}, { passive: true });
+$("result").addEventListener("touchend", e => {
+  if (!touch) return;
+  const dx = e.changedTouches[0].clientX - touch.x, dy = e.changedTouches[0].clientY - touch.y;
+  touch = null;
+  if (Math.abs(dx) >= 60 && Math.abs(dx) > Math.abs(dy) * 1.5) step(dx < 0 ? 1 : -1);
+}, { passive: true });
 document.addEventListener("keydown", e => {
   if ($("summary").hidden || e.target.closest("select,input")) return;
   if (e.key === "ArrowLeft") step(-1);
@@ -156,7 +177,7 @@ function gradeYear(birth, early, idx) {
 }
 
 // ===== 実行 =====
-async function run() {
+async function run(dir = 0) {
   const id = ++runId;
   const birth = +$("birth").value, early = $("early").checked, g = +$("grade").value;
   history.replaceState(null, "", "?" + new URLSearchParams({ b: birth, e: early ? 1 : 0, g }));
@@ -175,6 +196,7 @@ async function run() {
   $("sumText").textContent = `${birth}年${early ? "（早生まれ）" : ""}生まれ`;
   $("summary").hidden = false;
   $("result").innerHTML = renderYear(y, g, data, yd);
+  if (dir) $("result").firstElementChild.classList.add(dir > 0 ? "slide-l" : "slide-r");
 }
 
 // ===== 描画 =====
@@ -220,6 +242,20 @@ function renderYear(y, g, data, yd) {
     if (yd.buzzwords?.length) {
       h += `<h3>💬 流行語</h3><div class="chips">` +
         yd.buzzwords.map(b => link(b.w, `${esc(b.w)}${b.note ? `<small>${esc(b.note)}</small>` : ""}`, "chip")).join("") + `</div>`;
+    }
+    // ヒット曲（オリコン年間シングル上位）: [{title, artist}]
+    if (yd.hits?.length) {
+      h += `<h3>🎵 ヒット曲<small class="note">（オリコン年間シングル）</small></h3><ol>` +
+        yd.hits.map(s => `<li>${link(`${s.title} ${s.artist}`, `${esc(s.title)}<small>${esc(s.artist)}</small>`)}</li>`).join("") + `</ol>`;
+    }
+    // アイドル（オリコン年間売上上位）・芸能人（好きなタレント調査）: {male:[], female:[]}
+    for (const [k, label] of [["idols","🌟 アイドル"],["talents","📺 人気の芸能人"]]) {
+      const v = yd[k];
+      if (!v || !(v.male?.length || v.female?.length)) continue;
+      h += `<h3>${label}</h3>`;
+      for (const [sk, sl] of [["female","女性"],["male","男性"]]) {
+        if (v[sk]?.length) h += `<h4>${sl}</h4><div class="chips">` + v[sk].map(n => link(n, esc(n), "chip")).join("") + `</div>`;
+      }
     }
     const lists = [["trends","✨ 社会現象・ブーム"],["events","📰 出来事"],
                    ["music","🎵 音楽"],["movies","🎬 映画"],["books","📚 書籍"]];
